@@ -1,0 +1,8 @@
+.wrapper {
+  max-height: 500px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 35px 60px 0 60px;
+}

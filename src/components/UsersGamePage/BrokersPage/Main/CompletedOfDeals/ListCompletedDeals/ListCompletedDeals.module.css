@@ -1,0 +1,18 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 35px 120px 0 120px; 
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleText {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c4c4c4;
+}

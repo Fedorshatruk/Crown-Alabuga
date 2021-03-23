@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// css modules
+import m from './App.module.css';
 
-function App() {
+// components
+import { BrokersPage, ProducersPage } from './components';
+
+// instruments
+import { Route } from 'react-router-dom';
+
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={m.wrapper}>
+      <Route path="/BrokerPage" render={() => <BrokersPage />} />
+      <Route path="/ProducerPage" render={() => <ProducersPage />} />
     </div>
-  );
+  )
 }
 
 export default App;

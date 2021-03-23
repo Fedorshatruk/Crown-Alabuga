@@ -1,0 +1,19 @@
+.wrapper {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconTimer {
+  width: 45px;
+  height: 50px;
+  background: url(../../../../../assets/IconTimer.png) no-repeat center / cover;
+}
+
+.textTimer {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #746A6A;
+}
