@@ -10,9 +10,9 @@ import { Route } from 'react-router-dom';
 const App = (props) => {
   return (
     <div className={m.wrapper}>
-      <Route path="/LoginPage" render={() => <LoginPage />} />
-      <Route path="/brokerPage" render={() => <BrokersPage />} />
-      <Route path="/producerPage" render={() => <ProducersPage />} />
+      <Route path="/Login" render={() => <LoginPage />} />
+      <Route path="/broker" render={() => <BrokersPage />} />
+      <Route path="/producer" render={() => <ProducersPage />} />
     </div>
   )
 }

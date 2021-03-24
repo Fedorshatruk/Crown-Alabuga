@@ -9,8 +9,8 @@
   max-width: 25vw;
   height: 100vh;
   margin: 0 auto;
-  background-color: #89542f99;
-  box-shadow: 0 0 15px #25180e99;
+  background-color: #000000a6;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .wrapperItems {
@@ -23,10 +23,10 @@
 
 .title {
   text-align: center;
-  font-family: Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #deab87;
   margin: 15px 0;
 }
 
@@ -38,20 +38,28 @@
   height: 20px;
   width: 250px;
   background: #ffffff40;
-  color: #ffffffe1;
+  color: #ffffff;
   padding: 15px 10px;
   margin: 5px 0;
   border-radius: 5px;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 15px;
 }
 ::placeholder {
   color: #e0e0e0cc;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 15px;
 }
 
 .containerButton {
   width: 150px;
   height: 30px;
-  background: #ffffff;
+  background: #deab87;
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
   margin: 15px 0;
   border-radius: 5px;
+  color: #33271e;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 900;
+  font-size: 15px;
 }

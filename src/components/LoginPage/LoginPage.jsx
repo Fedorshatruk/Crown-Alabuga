@@ -1,14 +1,28 @@
 import m from './LoginPage.module.css';
-import { reduxForm } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
+import { Input } from '../../components/FormsControl/FormsControl';
+import { required } from '../../helpers/validators/validators';
+// import * as axios from 'axios';
 
 export const LoginForm = (props) => {
   return (
-    <form className={m.wrapperItemForm}>
+    <form onSubmit={props.handleSubmit} className={m.wrapperItemForm}>
       <div>
-        <input className={m.controlledInput} placeholder={'ФИО'} />
-      </div>
-      <div>
-        <input className={m.controlledInput} placeholder={'Пароль'} />
+        <Field
+          className={m.controlledInput}
+          placeholder={'ФИО'}
+          name={'username'}
+          validate={[required]}
+          component={Input}
+        />
+
+        <Field
+          className={m.controlledInput}
+          placeholder={'Пароль'}
+          name={'password'}
+          validate={[required]}
+          component={Input}
+        />
       </div>
       <div>
         <button className={m.containerButton}>Зарегистрироваться</button>
@@ -17,17 +31,30 @@ export const LoginForm = (props) => {
   );
 };
 
-const LoginReduxFrom  = reduxForm({form: 'login'})(LoginForm)
-
 export const LoginPage = (props) => {
+  const onSubmit = (formData) => {
+    console.log(formData);
+    // fetch('http://192.168.0.103:8000/auth/users/', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(formData)
+    // })
+    //   .then(responce => responce.json())
+    //   .then(json => console.log(json))
+    //   .catch(e => console.log(e));
+  };
   return (
     <div className={m.wrapperBG}>
       <div className={m.wrapperLogin}>
         <div className={m.wrapperItems}>
           <h1 className={m.title}>Создайте свой профиль</h1>
-          <LoginReduxFrom />
+          <LoginReduxFrom onSubmit={onSubmit} />
         </div>
       </div>
     </div>
   );
 };
+
+const LoginReduxFrom = reduxForm({ form: 'login' })(LoginForm);
