@@ -10,7 +10,7 @@ import { Route } from 'react-router-dom';
 const App = (props) => {
   return (
     <div className={m.wrapper}>
-      <Route path="/loginPage" render={() => <LoginPage />} />
+      <Route path="/LoginPage" render={() => <LoginPage />} />
       <Route path="/brokerPage" render={() => <BrokersPage />} />
       <Route path="/producerPage" render={() => <ProducersPage />} />
     </div>

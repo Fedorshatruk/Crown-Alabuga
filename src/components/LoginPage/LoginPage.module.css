@@ -1,15 +1,16 @@
 .wrapperBG {
   width: 100vw;
   height: 100vh;
-  background: url(../../assets/bg-reg.jpg) no-repeat center / cover;
+  background: url(../../assets/bg-index.jpg) no-repeat bottom / cover;
 }
 
 .wrapperLogin {
-  width: 400px;
+  min-width: 300px;
+  max-width: 25vw;
   height: 100vh;
   margin: 0 auto;
-  background-color: #000000a6;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  background-color: #89542f99;
+  box-shadow: 0 0 15px #25180e99;
 }
 
 .wrapperItems {
@@ -26,11 +27,11 @@
   font-size: 20px;
   font-weight: bold;
   color: #fff;
+  margin: 15px 0;
 }
 
 .wrapperItemForm {
   text-align: center;
-  margin: 10px;
 }
 
 .controlledInput {
@@ -47,10 +48,10 @@
 }
 
 .containerButton {
-  width: 100px;
+  width: 150px;
   height: 30px;
   background: #ffffff;
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
-  margin-top: 10px;
+  margin: 15px 0;
   border-radius: 5px;
 }
