@@ -2,7 +2,7 @@
 import m from './App.module.css';
 
 // components
-import { BrokersPage, ProducersPage } from './components';
+import { LoginPage, BrokersPage, ProducersPage } from './components';
 
 // instruments
 import { Route } from 'react-router-dom';
@@ -10,8 +10,9 @@ import { Route } from 'react-router-dom';
 const App = (props) => {
   return (
     <div className={m.wrapper}>
-      <Route path="/BrokerPage" render={() => <BrokersPage />} />
-      <Route path="/ProducerPage" render={() => <ProducersPage />} />
+      <Route path="/loginPage" render={() => <LoginPage />} />
+      <Route path="/brokerPage" render={() => <BrokersPage />} />
+      <Route path="/producerPage" render={() => <ProducersPage />} />
     </div>
   )
 }
