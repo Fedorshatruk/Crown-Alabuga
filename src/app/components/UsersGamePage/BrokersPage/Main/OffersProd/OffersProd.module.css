@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+  width: calc(370px + (570 - 370) * ((100vw - 800px) / (1920 - 800)));
+  height: 40vh; 
+  background: #fff;
+  box-shadow: 5px 10px 10px #00000026;
+}
+
+.titleText {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #746A6A;
+
+  text-align: center;
+  padding: 20px 5px 0;
+}
+
+.planContainer {
+  position: absolute;
+  bottom: 0;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.planText:first-child {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #746a6a;
+}
+.planText {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #746a6a;
+}
+
+.priceWrapper {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconPeso {
+  width: 20px;
+  height: 20px;
+  background: url(../../../../../../assets/IconPeso.png) no-repeat center / cover;
+}

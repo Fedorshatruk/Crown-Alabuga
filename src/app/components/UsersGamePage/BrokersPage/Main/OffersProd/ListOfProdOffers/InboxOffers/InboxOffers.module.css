@@ -1,0 +1,27 @@
+.listContainer {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.listText {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #746a6a;
+} 
+
+ .offersButton {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #746a6a; 
+
+  background: none;
+  border: 1px solid #746A6A;
+  border-radius: 8px;
+  padding: 10px 15px;  
+} 
+
