@@ -1,9 +1,10 @@
 // CSS modules
 import m from './AuthForm.module.css';
-// Instruments
+// instruments
 import { Field } from 'redux-form'
-import { required } from '../../heplers/validators/validators';
-import { Input } from '../index'
+import { Input, required } from '../../../components';
+// global components
+import { Button } from '../../../globalComponents';
 
 export const AuthForm = (props) => {
   return (
@@ -26,7 +27,17 @@ export const AuthForm = (props) => {
         />
       </div>
       <div>
-        <button className={m.containerButton}>Войти</button>
+        <Button
+          width="var(--width-button)"
+          height="var(--height-button)"
+          bg="var(--color-bg-brown)"
+          color="var(--color-typo-normal)"
+          fWeight="bold"
+          lSpasing="1px"
+          bShadow="var(--shadow-main)"
+          margin="var(--margin-m) auto"
+          bRadius="var(--radius-m)"
+        >Войти</Button>
       </div>
     </form>
   );

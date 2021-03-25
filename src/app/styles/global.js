@@ -50,6 +50,8 @@ export const GlobalStyle = createGlobalStyle`
     // width & height button
     --width-button: calc(120px + (160 - 120) * ((100vw - 400px) / (1920 - 400)));
     --height-button: calc(25px + (35 - 25) * (100vw - 400px) / (1920 - 400));
+    --width-input: calc(200px + (250 - 200) * ((100vw - 400px) / (1920 - 400)));
+    --height-input: calc(15px + (25 - 15) * (100vw - 400px) / (1920 - 400));
   }
   @font-face {
     font-family: 'Gothic';

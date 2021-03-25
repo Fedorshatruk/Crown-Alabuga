@@ -36,6 +36,7 @@ export const LoginForm = (props) => {
           lSpasing="1px"
           bShadow="var(--shadow-main)"
           margin="var(--margin-m) auto"
+          bRadius="var(--radius-m)"
         >Зарегистрироваться</Button>
       </div>
     </form>
