@@ -1,7 +1,6 @@
 // global components
 import {
   WrapperBG,
-  UniversalWrapper,
   Title,
   GridWrapper,
 } from '../../globalComponents';
@@ -32,25 +31,6 @@ export const SessionsPage = () => {
         <ItemSession />
         <ItemSession />
         <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        
-      
       </GridWrapper>
     </WrapperBG>
   );
