@@ -7,9 +7,10 @@ export const GridWrapper = styled.div`
   display: grid;
   padding: var(--padding-min-card, --padding-max-card);
   grid-gap: var(--grid-gap);
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: 300px;
-  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 165px;
+  grid-template-rows: repeat(auto-fit, 165px);
+  grid-auto-flow: dense; 
   align-items: center;
   justify-items: center;
 `;
