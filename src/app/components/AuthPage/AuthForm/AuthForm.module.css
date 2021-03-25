@@ -1,0 +1,18 @@
+.controlledInput {
+  height: var(--height-input);
+  width: var(--width-input);
+  background: var(--color-bg-ghost);
+  color: var(--color-typo-default);
+  padding: var(--padding-l, --padding-m);
+  margin: 5px 0;
+  border-radius: var(--radius-m);
+  font-family: 'Gothic', sans-serif;
+  font-size: var(--mini-fz);
+  letter-spacing: 2px;
+}
+input::placeholder {
+  color: var(--color-typo-ghost);
+  font-family: 'Gothic', sans-serif;
+  font-size: var(--mini-fz);
+  letter-spacing: 2px;
+}
