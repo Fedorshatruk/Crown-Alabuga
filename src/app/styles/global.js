@@ -10,7 +10,7 @@ import GothicFontWOFF from './fonts/gothic.woff';
 export const GlobalStyle = createGlobalStyle`
   #main {
     // width
-    --main-width: calc(350px + (450 - 350) * (100vw - 400px) / (1920 - 400));
+    --main-width: calc(300px + (450 - 300) * (100vw - 400px) / (1920 - 400));
     // color background
     --color-bg-default: #fff;
     --color-bg-button: #000;
@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-typo-ghost: #b0b0b0;
     --color-typo-browm: #deab87;
     --color-typo-button: #e0e0e0;
+    --color-typo-game: #623D29;
     // border-radius
     --radius-s: 4px;
     --radius-m: 8px;
@@ -50,8 +51,16 @@ export const GlobalStyle = createGlobalStyle`
     // width & height button
     --width-button: calc(120px + (160 - 120) * ((100vw - 400px) / (1920 - 400)));
     --height-button: calc(25px + (35 - 25) * (100vw - 400px) / (1920 - 400));
+    // width & height input
     --width-input: calc(200px + (250 - 200) * ((100vw - 400px) / (1920 - 400)));
     --height-input: calc(15px + (25 - 15) * (100vw - 400px) / (1920 - 400));
+    // width/height/padding/margin card
+    --width-card: calc(270px + (370 - 270) * ((100vw - 400px) / (1920 - 400)));
+    --height-card: calc(120px + (220 - 120) * (100vw - 400px) / (1920 - 400));
+    --padding-min-card: calc(40px + (70 - 40) * (100vw - 400px) / (1920 - 400));
+    --padding-max-card: calc(70px + (110 - 70) * (100vw - 400px) / (1920 - 400));
+    --grid-gap: calc(50px + (110 - 50) * (100vw - 400px) / (1920 - 400));
+
   }
   @font-face {
     font-family: 'Gothic';

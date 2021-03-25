@@ -3,7 +3,7 @@ import { LoginForm } from './LoginForm/LoginForm';
 // global components
 import { WrapperBG, UniversalWrapper, Title } from '../../globalComponents';
 // assets
-import bgImage from '../../../assets/bg-index.jpg';
+import bgImage from '../../../assets/bg-auth.jpg';
 // instruments
 import { reduxForm } from 'redux-form';
 
