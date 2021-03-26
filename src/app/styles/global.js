@@ -44,11 +44,13 @@ export const GlobalStyle = createGlobalStyle`
     --padding-m: calc(6px + (12 - 6) * var(--res));
     --padding-l: calc(10px + (18 - 10) * var(--res));
     --padding-xl: calc(12px + (26 - 12) * var(--res));
+    --padding-xxl: calc(20px + (30 - 20) * var(--res));
     // margin 
     --margin-s: calc(4px + (8 - 4) * var(--res));
     --margin-m: calc(6px + (12 - 6) * var(--res));
     --margin-l: calc(10px + (18 - 10) * var(--res));
     --margin-xl: calc(12px + (26 - 12) * var(--res));
+    --margin-xxl: calc(20px + (30 - 20) * var(--res));
     // box-shadow
     --shadow-normal: 0 0 15px var(--color-bg-button);
     // width & height button
@@ -64,12 +66,18 @@ export const GlobalStyle = createGlobalStyle`
     --padding-min-card: calc(30px + (60 - 30) * var(--res));
     --padding-max-card: calc(60px + (100 - 60) * var(--res));
     --grid-gap: calc(50px + (110 - 50) * var(--res));
+    // width/height card in game
+    --width-main-game-card: calc(260px + (560 - 260) * var(--res));
+    --height-main-game-card: calc(120px + (520 - 120) * var(--res));
+    --width-mini-game-card: calc(160px + (360 - 160) * var(--res));
+    --height-mini-game-card: calc(100px + (300 - 100) * var(--res));
+    --margin-sendDeals-game-card: calc(60px + (200 - 60) * var(--res));
     // width & height icon 
     --width-main-icon: calc(40px + (50 - 40) * var(--res));
     --width-mini-icon: calc(30px + (40 - 30) * var(--res));
     --height-main-icon: calc(40px + (50 - 40) * var(--res));
     --height-mini-icon: calc(30px + (40 - 30) * var(--res));
-    --height-timer-icon: calc(35px + (45 - 35) * var(--res));
+    --height-high-icon: calc(35px + (45 - 35) * var(--res));
     // display flex
     --width-main-flex: calc(270px + (370 - 270) * var(--res));
     --width-mini-flex: calc(80px + (130 - 80) * var(--res));

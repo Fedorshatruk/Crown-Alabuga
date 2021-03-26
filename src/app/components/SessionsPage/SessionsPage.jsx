@@ -1,9 +1,5 @@
 // global components
-import {
-  WrapperBG,
-  Title,
-  GridWrapper,
-} from '../../globalComponents';
+import { WrapperBG, Title, GridWrapper } from '../../globalComponents';
 // assets
 import bgImage from '../../../assets/bg-session.jpg';
 
@@ -20,7 +16,13 @@ export const SessionsPage = () => {
       >
         Добро пожаловать, путник!
       </Title>
-      <GridWrapper>
+      <GridWrapper
+        gGap="var(--grid-gap)"
+        gTColumns="repeat(auto-fill, minmax(300px, 1fr))"
+        gARows="165px"
+        gTRows="repeat(auto-fit, 165px)"
+        gAFlow="dense"
+      >
         <ItemSession />
         <ItemSession />
         <ItemSession />

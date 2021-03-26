@@ -13,7 +13,7 @@ export const Timer = () => {
       <PesoIcon
         bg={iconImage}
         width="var(--width-mini-icon)"
-        height="var(--height-timer-icon)"
+        height="var(--height-high-icon)"
       />
       <Title
         fSize="var(--title-fz-game)"

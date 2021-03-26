@@ -5,6 +5,8 @@ export const ItemSession = () => {
   return (
     <Card
       bg="var(--color-bg-main)"
+      width="100%"
+      height="100%"
       bShadow="var(--shadow-normal)"
       bRadius="var(--radius-xl)"
     >
@@ -16,7 +18,7 @@ export const ItemSession = () => {
         Название игры
       </Title>
       <FlexWrapper
-        height="var(--height-flex)"
+        height="var(--height-main-flex)"
         fDirection="column"
         jContent="space-around"
         aItems="flex-start"

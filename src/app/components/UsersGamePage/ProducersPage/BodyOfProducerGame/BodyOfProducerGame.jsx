@@ -1,14 +1,20 @@
 // global components
-import { GridWrapper } from '../../../../globalComponents';
+import { FlexWrapper } from '../../../../globalComponents';
 // components
-import { Header } from '../../GamePageElements';
+import { Header, Main, Footer } from '../../GamePageElements';
 
 export const BodyOfProducerGame = () => {
   return (
-    <GridWrapper>
+    <FlexWrapper
+      width="100vw"
+      height="100vh"
+      padding="var(--padding-xxl)"
+      fDirection="column"
+      jContent="space-between"
+    >
       <Header />
-      <div>Main</div>
-      <div>Footer</div>
-    </GridWrapper>
+      <Main />
+      <Footer />
+    </FlexWrapper>
   );
 };
