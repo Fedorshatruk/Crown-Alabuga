@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const FlexWrapper = styled.div`
-  /* width: 100vw; */
-  height: var(--height-card-item); 
-  margin: ${(props) => (props.margin || 'none')};
+  width: ${(props) => (props.width || 'auto')};
+  height: ${(props) => (props.height || 'auto')};
+  margin: ${(props) => props.margin || 'none'};
 
-  display: ${(props) => props.display || 'block'};
+  display: flex;
   flex-direction: ${(props) => props.fDirection || 'row'};
   justify-content: ${(props) => props.jContent || 'center'};
   align-items: ${(props) => props.aItems || 'center'};

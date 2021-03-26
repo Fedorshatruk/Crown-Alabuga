@@ -37,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     --main-fz: calc(14px + (18 - 14) * --res);
     --mini-fz: calc(10px + (14 - 10) * var(--res));
     --title-fz: calc(20px + (30 - 20) * var(--res));
+    --title-fz-game: calc(10px + (30 - 10) * var(--res));
     --subtitle-fz: calc(20px + (15 - 20) * var(--res));
     // padding
     --padding-s: calc(4px + (8 - 4) * var(--res));
@@ -63,7 +64,18 @@ export const GlobalStyle = createGlobalStyle`
     --padding-min-card: calc(30px + (60 - 30) * var(--res));
     --padding-max-card: calc(60px + (100 - 60) * var(--res));
     --grid-gap: calc(50px + (110 - 50) * var(--res));
-
+    // width & height icon 
+    --width-main-icon: calc(40px + (50 - 40) * var(--res));
+    --width-mini-icon: calc(30px + (40 - 30) * var(--res));
+    --height-main-icon: calc(40px + (50 - 40) * var(--res));
+    --height-mini-icon: calc(30px + (40 - 30) * var(--res));
+    --height-timer-icon: calc(35px + (45 - 35) * var(--res));
+    // display flex
+    --width-main-flex: calc(270px + (370 - 270) * var(--res));
+    --width-mini-flex: calc(80px + (130 - 80) * var(--res));
+    --height-main-flex: calc(150px + (100 - 150) * var(--res));
+    --height-mini-flex: calc(30px + (65 - 30) * var(--res));
+    // display grid 
   }
   @font-face {
     font-family: 'Gothic';

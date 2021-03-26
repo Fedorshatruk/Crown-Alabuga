@@ -4,7 +4,7 @@ export const GridWrapper = styled.div`
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
-  display: grid;
+  display: ${(props) => (props.grid ? 'grid' : 'block')};
   padding: var(--padding-min-card, --padding-max-card);
   grid-gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

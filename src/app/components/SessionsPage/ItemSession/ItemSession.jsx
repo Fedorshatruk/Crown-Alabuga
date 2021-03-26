@@ -16,7 +16,7 @@ export const ItemSession = () => {
         Название игры
       </Title>
       <FlexWrapper
-        display="flex"
+        height="var(--height-flex)"
         fDirection="column"
         jContent="space-around"
         aItems="flex-start"

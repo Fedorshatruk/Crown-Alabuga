@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Title = styled.div`
   font-family: ${(props) => (props.fontFamily || 'Gothic')};
-  font-size: var(--title-fz);
+  font-size: ${(props) => (props.fSize ? 'var(--title-fz-game)' : 'var(--title-fz)')};
   font-weight: ${(props) => (props.fWeight || 'normal')};
   letter-spacing: ${(props) => (props.lSpasing || 'none')};
   text-align: ${(props) => (props.tAlign || 'center')};
