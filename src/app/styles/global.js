@@ -36,18 +36,22 @@ export const GlobalStyle = createGlobalStyle`
     // font-size
     --main-fz: calc(14px + (18 - 14) * --res);
     --mini-fz: calc(10px + (14 - 10) * var(--res));
-    --title-fz: calc(20px + (30 - 20) * var(--res));
-    --subtitle-fz: calc(20px + (15 - 20) * var(--res));
+    --title-fz: calc(25px + (35 - 25) * var(--res));
+    --title-fz-game: calc(15px + (25 - 15) * var(--res));
+    --subtitle-fz: calc(20px + (30 - 20) * var(--res));
+    --subtitle-fz-game: calc(15px + (25 - 15) * var(--res));
     // padding
     --padding-s: calc(4px + (8 - 4) * var(--res));
     --padding-m: calc(6px + (12 - 6) * var(--res));
     --padding-l: calc(10px + (18 - 10) * var(--res));
     --padding-xl: calc(12px + (26 - 12) * var(--res));
+    --padding-xxl: calc(20px + (30 - 20) * var(--res));
     // margin 
     --margin-s: calc(4px + (8 - 4) * var(--res));
     --margin-m: calc(6px + (12 - 6) * var(--res));
     --margin-l: calc(10px + (18 - 10) * var(--res));
     --margin-xl: calc(12px + (26 - 12) * var(--res));
+    --margin-xxl: calc(20px + (30 - 20) * var(--res));
     // box-shadow
     --shadow-normal: 0 0 15px var(--color-bg-button);
     // width & height button
@@ -63,7 +67,24 @@ export const GlobalStyle = createGlobalStyle`
     --padding-min-card: calc(30px + (60 - 30) * var(--res));
     --padding-max-card: calc(60px + (100 - 60) * var(--res));
     --grid-gap: calc(50px + (110 - 50) * var(--res));
-
+    // width/height card in game
+    --width-main-game-card: calc(260px + (560 - 260) * var(--res));
+    --height-main-game-card: calc(220px + (520 - 220) * var(--res));
+    --width-mini-game-card: calc(160px + (360 - 160) * var(--res));
+    --width-mini-extra-game-card: calc(100px + (250 - 100) * var(--res));
+    --height-mini-game-card: calc(30px + (120 - 30) * var(--res));
+    // width & height icon 
+    --width-main-icon: calc(40px + (60 - 40) * var(--res));
+    --width-mini-icon: calc(20px + (30 - 20) * var(--res));
+    --height-main-icon: calc(40px + (50 - 40) * var(--res));
+    --height-mini-icon: calc(20px + (30 - 20) * var(--res));
+    --height-high-icon: calc(35px + (45 - 35) * var(--res));
+    // display flex
+    --width-main-flex: calc(270px + (370 - 270) * var(--res));
+    --width-mini-flex: calc(100px + (150 - 100) * var(--res));
+    --height-main-flex: calc(150px + (100 - 150) * var(--res));
+    --height-mini-flex: calc(30px + (65 - 30) * var(--res));
+    // display grid 
   }
   @font-face {
     font-family: 'Gothic';
