@@ -1,7 +1,12 @@
 // components
 import { LoginForm } from './LoginForm/LoginForm';
 // global components
-import { WrapperBG, UniversalWrapper, Title } from '../../globalComponents';
+import {
+  WrapperBG,
+  UniversalWrapper,
+  FlexWrapper,
+  Title,
+} from '../../globalComponents';
 // assets
 import bgImage from '../../../assets/bg-auth.jpg';
 // instruments
@@ -21,20 +26,12 @@ export const LoginPage = (props) => {
         margin="0 auto"
         padding="var(--padding-xl)"
       >
-        <UniversalWrapper
-          display="flex"
-          fDirection="column"
-          height="100vh"
-        >
-          <Title 
-            lSpasing="1px"
-            fWeight="bold"
-            margin="var(--margin-m) 0"
-          >
+        <FlexWrapper fDirection="column" height="100vh">
+          <Title bold margin="var(--margin-m) 0">
             Создайте свой профиль
           </Title>
           <LoginReduxFrom onSubmit={onSubmit} />
-        </UniversalWrapper>
+        </FlexWrapper>
       </UniversalWrapper>
     </WrapperBG>
   );
