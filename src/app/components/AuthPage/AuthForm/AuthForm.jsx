@@ -4,7 +4,7 @@ import m from './AuthForm.module.css';
 import { Field } from 'redux-form'
 import { Input, required } from '../../../components';
 // global components
-import { Button } from '../../../globalComponents';
+import { Button, FlexWrapper } from '../../../globalComponents';
 
 export const AuthForm = (props) => {
   return (
@@ -27,17 +27,14 @@ export const AuthForm = (props) => {
         />
       </div>
       <div>
-        <Button
-          width="var(--width-button)"
-          height="var(--height-button)"
-          bg="var(--color-bg-brown)"
-          color="var(--color-typo-normal)"
-          fWeight="bold"
-          lSpasing="1px"
-          bShadow="var(--shadow-main)"
-          margin="var(--margin-m) auto"
-          bRadius="var(--radius-m)"
-        >Войти</Button>
+        <FlexWrapper fDirection="column">
+          <Button
+            width="100px"
+            lSpasing="1px"
+            margin="var(--margin-s) 0 var(--margin-s) 0"
+          >Войти</Button>
+          <Button>Регистрация</Button>
+        </FlexWrapper>
       </div>
     </form>
   );

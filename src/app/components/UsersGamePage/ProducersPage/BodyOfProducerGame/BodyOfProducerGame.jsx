@@ -1,7 +1,7 @@
 // global components
 import { FlexWrapper } from '../../../../globalComponents';
 // components
-import { Header, Main, Footer } from '../../GamePageElements';
+import { Header, MainProducer, Footer } from '../../GamePageElements';
 
 export const BodyOfProducerGame = () => {
   return (
@@ -13,7 +13,7 @@ export const BodyOfProducerGame = () => {
       jContent="space-between"
     >
       <Header />
-      <Main />
+      <MainProducer />
       <Footer />
     </FlexWrapper>
   );

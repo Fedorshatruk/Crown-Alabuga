@@ -68,7 +68,7 @@ export const GlobalStyle = createGlobalStyle`
     --grid-gap: calc(50px + (110 - 50) * var(--res));
     // width/height card in game
     --width-main-game-card: calc(260px + (560 - 260) * var(--res));
-    --height-main-game-card: calc(120px + (520 - 120) * var(--res));
+    --height-main-game-card: calc(220px + (520 - 220) * var(--res));
     --width-mini-game-card: calc(160px + (360 - 160) * var(--res));
     --height-mini-game-card: calc(100px + (300 - 100) * var(--res));
     --margin-sendDeals-game-card: calc(60px + (200 - 60) * var(--res));

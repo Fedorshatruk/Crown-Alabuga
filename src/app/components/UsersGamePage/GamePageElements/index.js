@@ -1,4 +1,4 @@
 // components
 export { Header } from './Header/Header';
-export { Main } from './Main/Main';
+export { MainProducer } from './Main/MainProducer/MainProducer';
 export { Footer } from './Footer/Footer';

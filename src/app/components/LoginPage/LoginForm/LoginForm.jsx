@@ -28,15 +28,8 @@ export const LoginForm = (props) => {
       </div>
       <div>
         <Button
-          width="var(--width-button)"
-          height="var(--height-button)"
-          bg="var(--color-bg-brown)"
-          color="var(--color-typo-normal)"
-          fWeight="bold"
           lSpasing="1px"
-          bShadow="var(--shadow-main)"
           margin="var(--margin-m) auto"
-          bRadius="var(--radius-m)"
         >Зарегистрироваться</Button>
       </div>
     </form>
