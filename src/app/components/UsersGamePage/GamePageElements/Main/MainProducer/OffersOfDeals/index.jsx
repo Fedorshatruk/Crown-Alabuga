@@ -1,62 +1,56 @@
-import { Card, FlexWrapper, PesoIcon, Subtitle, Title } from '../../../../../../globalComponents';
+import {
+  Card,
+  FlexWrapper,
+  Icon,
+  Subtitle,
+  Title,
+} from '../../../../../../globalComponents';
 import iconImage from '../../../../../../../assets/PesoIcon.png';
 
 const ListDealsItems = () => {
-  return (
-    <div>list of deals</div>
-  )
-}
+  return <div>list of deals</div>;
+};
 
 const DealsResultItem = () => {
   return (
     <FlexWrapper width="90%" jContent="space-between">
-      <Title>ПЛАН</Title>
+      <Title fSize="var(--title-fz-game)">ПЛАН</Title>
       <Subtitle>55</Subtitle>
-      <FlexWrapper width="50px" jContent="space-between">
-        <PesoIcon 
-          bg={iconImage} 
-          width="15px"
-          height="15px" 
-        />
-        <Subtitle>65</Subtitle>
-      </FlexWrapper>
-      <FlexWrapper width="50px" jContent="space-between">
-        <PesoIcon 
+      <FlexWrapper width="var(--width-main-icon)" jContent="space-between">
+        <Icon
           bg={iconImage}
-          width="15px"
-          height="15px" 
+          width="var(--width-mini-icon)"
+          height="var(--height-mini-icon)"
         />
-        <Subtitle>80</Subtitle>
+        <Subtitle fSize="var(--subtitle-fz-game)">65</Subtitle>
+      </FlexWrapper>
+      <FlexWrapper width="var(--width-main-icon)" jContent="space-between">
+        <Icon
+          bg={iconImage}
+          width="var(--width-mini-icon)"
+          height="var(--height-mini-icon)"
+        />
+        <Subtitle fSize="var(--subtitle-fz-game)">80</Subtitle>
       </FlexWrapper>
     </FlexWrapper>
-  )
-}
+  );
+};
 
 const ItemsOfOffers = () => {
   return (
-    <FlexWrapper
-      height="95%"
-      fDirection="column"
-      jContent="space-between"
-      margin="15px"
-    >
-      <Subtitle>МОИ ПРЕДЛОЖЕНИЯ МАКЛЕРАМ</Subtitle>
+    <FlexWrapper height="100%" fDirection="column" jContent="space-between">
+      <Title fSize="var(--title-fz-game)" lSpasing="2px">
+        Мои предложения маклерам
+      </Title>
       <ListDealsItems />
       <DealsResultItem />
     </FlexWrapper>
-  )
-}
+  );
+};
 
 export const OffersOfDeals = () => {
   return (
-    <Card
-      bg="var(--color-bg-main)"
-      width="var(--width-main-game-card)"
-      height="var(--height-main-game-card)"
-      margin="var(--margin-xl)"
-      bRadius="var(--radius-m)"
-      bShadow="var(--shadow-normal)"
-    >
+    <Card height="100%" margin="0 var(--margin-l)" padding="var(--padding-l)">
       <ItemsOfOffers />
     </Card>
   );

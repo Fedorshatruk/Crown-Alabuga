@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <FlexWrapper 
       width="100%"
-      height="var(--height-mini-flex)"
+      height="5vh"
       jContent="space-between"
     >
       <AmountOfPeso />

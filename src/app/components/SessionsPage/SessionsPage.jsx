@@ -10,17 +10,16 @@ export const SessionsPage = () => {
     <WrapperBG rapperBG bg={bgImage}>
       <Title
         color="var(--color-typo-game)"
-        fWeight="bold"
-        lSpasing="1px"
+        bold
         margin="var(--margin-l)"
       >
         Добро пожаловать, путник!
       </Title>
       <GridWrapper
         gGap="var(--grid-gap)"
-        gTColumns="repeat(auto-fill, minmax(300px, 1fr))"
-        gARows="165px"
-        gTRows="repeat(auto-fit, 165px)"
+        gTColumns="repeat(auto-fill, minmax(350px, 1fr))"
+        gARows="170px"
+        gTRows="repeat(auto-fit, 170px)"
         gAFlow="dense"
       >
         <ItemSession />

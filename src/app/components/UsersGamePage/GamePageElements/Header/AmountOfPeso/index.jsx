@@ -1,5 +1,5 @@
 // global components
-import { FlexWrapper, PesoIcon, Title } from '../../../../../globalComponents';
+import { FlexWrapper, Icon, Title } from '../../../../../globalComponents';
 // assets
 import iconImage from '../../../../../../assets/PesoIcon.png';
 
@@ -10,12 +10,12 @@ export const AmountOfPeso = () => {
       width="var(--width-mini-flex)"
       height="var(--height-mini-flex)"
     >
-      <PesoIcon
+      <Icon
         bg={iconImage}
-        width="var(--width-mini-icon)"
-        height="var(--height-mini-icon)"
+        width="var(--width-main-icon)"
+        height="var(--height-main-icon)"
       />
-      <Title fSize="var(--title-fz-game)" color="var(--color-typo-game)" fWeight="bold" lSpasing="1px">
+      <Title color="var(--color-typo-game)" bold>
         6000
       </Title>
     </FlexWrapper>

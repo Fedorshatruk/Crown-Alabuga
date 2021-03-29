@@ -9,4 +9,4 @@ export { Button } from './Button';
 export { Title } from './Title';
 export { Subtitle } from './Subtitle';
 export { Card } from './Card';
-export { PesoIcon } from './PesoIcon';
+export { Icon } from './Icon';

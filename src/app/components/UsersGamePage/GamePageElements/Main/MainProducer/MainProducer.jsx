@@ -1,5 +1,5 @@
 // global components
-import { FlexWrapper, GridWrapper } from '../../../../../globalComponents';
+import { FlexWrapper } from '../../../../../globalComponents';
 // elements
 import {
   SendOfDeals,
@@ -10,8 +10,18 @@ import {
 
 export const MainProducer = () => {
   return (
-    <FlexWrapper width="100%" jContent="space-between" aItems="flex-start">
-      <FlexWrapper height="100%" fDirection="column" jContent="space-between">
+    <FlexWrapper
+      width="100%"
+      height="45vh"
+      jContent="space-between"
+      aItems="flex-start"
+    >
+      <FlexWrapper
+        height="100%"
+        fDirection="column"
+        jContent="space-between"
+        margin="0 var(--margin-l)"
+      >
         <SendOfDeals />
         <SendOfDealsProd />
       </FlexWrapper>

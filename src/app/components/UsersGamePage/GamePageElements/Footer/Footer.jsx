@@ -8,7 +8,7 @@ export const Footer = () => {
     <FlexWrapper 
       width="100%"
       jContent="space-between"
-      height="var(--height-mini-flex)"
+      height="5vh"
     >
       <Tutorial />
       <CrownMap />

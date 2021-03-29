@@ -1,14 +1,14 @@
 // global components
-import { PesoIcon } from '../../../../../globalComponents';
+import { Icon } from '../../../../../globalComponents';
 // assets
 import iconImage from '../../../../../../assets/FAQ.png';
 
 export const Tutorial = () => {
   return (
-      <PesoIcon
+      <Icon
         bg={iconImage}
-        width="var(--width-mini-icon)"
-        height="var(--height-mini-icon)"
+        width="var(--width-main-icon)"
+        height="var(--height-main-icon)"
       />
   );
 };

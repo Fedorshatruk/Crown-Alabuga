@@ -1,31 +1,27 @@
-import { Card, Subtitle, Title } from '../../../globalComponents';
+import { Card, Subtitle } from '../../../globalComponents';
 import { FlexWrapper } from '../../../globalComponents/FlexWrapper';
 
 export const ItemSession = () => {
   return (
-    <Card
-      bg="var(--color-bg-main)"
-      width="100%"
-      height="100%"
-      bShadow="var(--shadow-normal)"
-      bRadius="var(--radius-xl)"
-    >
-      <Title
-        lSpasing="1px"
-        margin="var(--margin-l) 0 0 0"
+    <Card width="100%" height="100%" padding="var(--padding-l)">
+      <Subtitle
+        margin="0 0 var(--margin-l) 0"
         color="var(--color-typo-default)"
       >
         Название игры
-      </Title>
+      </Subtitle>
       <FlexWrapper
         height="var(--height-main-flex)"
         fDirection="column"
         jContent="space-around"
         aItems="flex-start"
-        margin="var(--margin-s) var(--margin-xl)"
       >
-        <Subtitle lSpasing="1px">Режим: нормал</Subtitle>
-        <Subtitle lSpasing="1px">Количество игроков: 12/36</Subtitle>
+        <Subtitle fSize="var(--subtitle-fz-game)" lSpasing="1px">
+          Режим: нормал
+        </Subtitle>
+        <Subtitle fSize="var(--subtitle-fz-game)" lSpasing="1px">
+          Количество игроков: 12/36
+        </Subtitle>
       </FlexWrapper>
     </Card>
   );

@@ -4,6 +4,7 @@ import { BodyOfProducerGame } from './BodyOfProducerGame/BodyOfProducerGame';
 import { WrapperBG } from '../../../globalComponents';
 // assets
 import bgImage from '../../../../assets/bg-reg.jpg';
+// import bgImage from '../../../../assets/background.png';
 
 export const ProducersPage = () => {
   return (

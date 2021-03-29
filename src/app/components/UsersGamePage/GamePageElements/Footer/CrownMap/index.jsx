@@ -1,13 +1,13 @@
 // global components
-import { PesoIcon } from '../../../../../globalComponents';
+import { Icon } from '../../../../../globalComponents';
 // assets
 import iconImage from '../../../../../../assets/MapIcon.png';
 
 export const CrownMap = () => {
   return (
-    <PesoIcon
+    <Icon
       bg={iconImage}
-      width="var(--width-mini-icon)"
+      width="var(--width-main-icon)"
       height="var(--height-high-icon)"
     />
   );

@@ -1,17 +1,11 @@
-import { Card } from '../../../../../../globalComponents';
+import { Card, Title } from '../../../../../../globalComponents';
 
 export const CompletedOfDeals = () => {
   return (
-    <Card
-      color="white"
-      bg="var(--color-bg-main)"
-      width="var(--width-main-game-card)"
-      height="var(--height-main-game-card)"
-      margin="var(--margin-xl)"
-      bRadius="var(--radius-m)"
-      bShadow="var(--shadow-normal)"
-    >
-      CompletedOfDeals
+    <Card height="100%" margin="0 var(--margin-l)" padding="var(--padding-l)">
+      <Title fSize="var(--title-fz-game)" lSpasing="2px">
+        Сделки состоялись
+      </Title>
     </Card>
   );
 };
