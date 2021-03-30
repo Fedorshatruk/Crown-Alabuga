@@ -13,8 +13,9 @@ import bgImage from '../../../assets/bg-auth.jpg';
 import { reduxForm } from 'redux-form';
 
 export const LoginPage = (props) => {
+
   const onSubmit = (formData) => {
-    console.log(formData);
+    props.userRegister(formData.username, formData.password)
   };
   return (
     <WrapperBG bg={bgImage}>

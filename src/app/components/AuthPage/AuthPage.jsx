@@ -12,9 +12,10 @@ import bgImage from '../../../assets/bg-auth.jpg';
 // instruments
 import { reduxForm } from 'redux-form';
 
+
 export const AuthPage = (props) => {
   const onSubmit = (formData) => {
-    console.log(formData);
+    props.userLogin(formData.username, formData.password)
   };
   return (
     <WrapperBG bg={bgImage}>
@@ -38,3 +39,4 @@ export const AuthPage = (props) => {
 };
 
 const LoginReduxFrom = reduxForm({ form: 'login' })(AuthForm);
+
