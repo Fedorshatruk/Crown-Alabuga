@@ -1,5 +1,5 @@
 // components
-
+import {AuthPage} from "./AuthPage";
 // global components
 
 // assets
@@ -8,7 +8,6 @@
 import React from 'react';
 import {authMe, userLogin} from "../../bus/Reducer/authReducer";
 import {connect} from "react-redux";
-import {AuthPage} from "./AuthPage";
 import { Redirect } from 'react-router';
 
 

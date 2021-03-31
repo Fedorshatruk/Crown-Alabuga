@@ -4,7 +4,7 @@ import {read_cookie} from "sfcookies";
 const BASE_URL = 'http://192.168.0.107:8000'
 const AUTH = '/auth/'
 const GAME = '/game/'
-const SESSION = "/game/session-admin/"
+const SESSION = "session-admin/"
 
 export const authApi = {
     loginApi(password="", username="") {

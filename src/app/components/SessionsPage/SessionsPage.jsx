@@ -3,9 +3,7 @@ import { WrapperBG, Title, GridWrapper } from '../../globalComponents';
 // assets
 import bgImage from '../../../assets/bg-session.jpg';
 
-import { ItemSession } from './ItemSession/ItemSession';
-
-export const SessionsPage = () => {
+export const SessionsPage = props => {
   return (
     <WrapperBG rapperBG bg={bgImage}>
       <Title
@@ -22,16 +20,7 @@ export const SessionsPage = () => {
         gTRows="repeat(auto-fit, 170px)"
         gAFlow="dense"
       >
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
-        <ItemSession />
+          {props.sessions}
       </GridWrapper>
     </WrapperBG>
   );

@@ -73,6 +73,7 @@ export const authMe = () => (dispatch) => {
     authApi.getMe()
         .then(response => {
             dispatch(setUserDataAC(response.data.id, response.data.username))
+            dispatch(setIsAuth(true))
         })
 }
 

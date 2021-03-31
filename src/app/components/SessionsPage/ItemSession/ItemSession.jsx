@@ -1,14 +1,14 @@
 import { Card, Subtitle } from '../../../globalComponents';
 import { FlexWrapper } from '../../../globalComponents/FlexWrapper';
 
-export const ItemSession = () => {
+export const ItemSession = props => {
   return (
     <Card width="100%" height="100%" padding="var(--padding-l)">
       <Subtitle
         margin="0 0 var(--margin-l) 0"
         color="var(--color-typo-default)"
       >
-        Название игры
+        Название игры: {props.session.name}
       </Subtitle>
       <FlexWrapper
         height="var(--height-main-flex)"
@@ -17,10 +17,12 @@ export const ItemSession = () => {
         aItems="flex-start"
       >
         <Subtitle fSize="var(--subtitle-fz-game)" lSpasing="1px">
-          Режим: нормал
+          Режим: {props.session.game_type}
         </Subtitle>
         <Subtitle fSize="var(--subtitle-fz-game)" lSpasing="1px">
-          Количество игроков: 12/36
+          Количество игроков: {
+            `${props.session.number_of_players.slice(0, 2)}/${props.session.number_of_players.slice(3)}`
+        }
         </Subtitle>
       </FlexWrapper>
     </Card>

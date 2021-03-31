@@ -1,3 +1,5 @@
+import {sessionApi} from "../../api/api";
+
 
 const SET_SESSIONS = 'SET_SESSIONS'
 let initialState = {
@@ -18,9 +20,7 @@ let initialState = {
     "current_turn": 0,
     "players": 0
   }*/
-
-
-export const authReducer = (state = initialState, action) => {
+export const sessionsReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_SESSIONS:
             return {
@@ -34,3 +34,15 @@ export const authReducer = (state = initialState, action) => {
 
 export const setSessions = (sessions) => ({type:SET_SESSIONS, data: sessions})
 
+export const getAllSessions = () => (dispatch) => {
+    sessionApi.getSessions()
+        .then(response => {
+            if (response.status === 200) {
+                dispatch(setSessions(response.data))
+            }
+        })
+        .catch(error => {
+            /*TODO Необходима нормальная обработка ошибок*/
+            console.log(error.response)
+        })
+}
