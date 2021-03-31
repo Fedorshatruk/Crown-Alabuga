@@ -9,12 +9,13 @@ import React from 'react';
 import {authMe, userRegister} from "../../bus/Reducer/authReducer";
 import {connect} from "react-redux";
 import {LoginPage} from "./LoginPage";
+import {Redirect} from "react-router";
 
 
 const LoginPageContainer = props => {
+    if (props.auth.isRegister) { return <Redirect to="/auth"/> }
     return <LoginPage auth={props.auth} userRegister={props.userRegister} authMe={props.authMe}/>
 }
-
 let mapStateToProps = (state) => {
     return {
         auth: state.auth,

@@ -3,6 +3,8 @@ import {read_cookie} from "sfcookies";
 
 const BASE_URL = 'http://192.168.0.107:8000'
 const AUTH = '/auth/'
+const GAME = '/game/'
+const SESSION = "/game/session-admin/"
 
 export const authApi = {
     loginApi(password="", username="") {
@@ -25,4 +27,8 @@ export const authApi = {
     },
     getMe() {
         return axios.get(`${BASE_URL}${AUTH}users/me/`, {headers: {Authorization: read_cookie('Token')}})}
+}
+
+export const sessionApi = {
+    getSessions() {return axios.get(`${BASE_URL}${GAME}${SESSION}`, {headers: {Authorization: read_cookie('Token')}})}
 }

@@ -5,7 +5,7 @@
 // assets
 
 // instruments
-import React, {useEffect} from 'react';
+import React from 'react';
 import {authMe, userLogin} from "../../bus/Reducer/authReducer";
 import {connect} from "react-redux";
 import {AuthPage} from "./AuthPage";
