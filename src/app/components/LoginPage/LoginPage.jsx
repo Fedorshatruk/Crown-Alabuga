@@ -15,7 +15,7 @@ import { reduxForm } from 'redux-form';
 export const LoginPage = (props) => {
 
   const onSubmit = (formData) => {
-    props.userRegister(formData.username, formData.password)
+    props.userRegister(formData.password, formData.username)
   };
   return (
     <WrapperBG bg={bgImage}>

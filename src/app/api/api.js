@@ -5,9 +5,10 @@ const BASE_URL = 'http://192.168.0.107:8000'
 const AUTH = '/auth/'
 const GAME = '/game/'
 const SESSION = "session-admin/"
+const JOIN = 'join/'
 
 export const authApi = {
-    loginApi(password="", username="") {
+    loginApi(username="", password="" ) {
         return axios.post(
             `${BASE_URL}${AUTH}token/login/`,
             {
@@ -26,9 +27,13 @@ export const authApi = {
         )
     },
     getMe() {
-        return axios.get(`${BASE_URL}${AUTH}users/me/`, {headers: {Authorization: read_cookie('Token')}})}
+        return axios.get(`${BASE_URL}${AUTH}users/me/`, {headers: {Authorization: read_cookie('Token')}})},
+    joinSession(id){
+        return axios.post(`${BASE_URL}${GAME}${JOIN}${id}/`,"", {headers: {Authorization: read_cookie('Token')}})
+    }
 }
 
 export const sessionApi = {
-    getSessions() {return axios.get(`${BASE_URL}${GAME}${SESSION}`, {headers: {Authorization: read_cookie('Token')}})}
+    getSessions() {return axios.get(`${BASE_URL}${GAME}${SESSION}`, {headers: {Authorization: read_cookie('Token')}})},
+
 }

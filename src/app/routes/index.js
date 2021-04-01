@@ -3,9 +3,11 @@ import { BrokersPage, ProducersPage } from '../components';
 import AuthPageContainer from "../components/AuthPage/AuthPageContainer";
 import LoginPageContainer from "../components/LoginPage/LoginPageContainer";
 import SessionPageContainer from "../components/SessionsPage/SessionPageContainer";
+import StartPreloaderContainer from "../components/StartPreloader/StartPreloaderContainer";
 
 // instruments
 import { Route, Switch } from 'react-router-dom';
+
 
 
 export const Routes = () => {
@@ -16,6 +18,7 @@ export const Routes = () => {
         <Route path="/sessions" render={() => <SessionPageContainer />} />
         <Route path="/broker" render={() => <BrokersPage />} />
         <Route path="/producer" render={() => <ProducersPage />} />
+        <Route path="/start" render={() => <StartPreloaderContainer/>} />
     </Switch>
   );
 };

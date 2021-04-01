@@ -2,8 +2,10 @@ import {sessionApi} from "../../api/api";
 
 
 const SET_SESSIONS = 'SET_SESSIONS'
+const SET_DETAIL_SESSION = 'SET_DETAIL_SESSION'
 let initialState = {
-    sessions: null
+    sessions: null,
+    sessionDetail: null
 };
 /* {
     "id": 1,
@@ -27,12 +29,18 @@ export const sessionsReducer = (state = initialState, action) => {
                 ...state,
                 sessions: action.data,
             };
+        case SET_DETAIL_SESSION:
+            return {
+                ...state,
+                sessionDetail: action.data,
+            };
         default:
             return state;
     }
 };
 
 export const setSessions = (sessions) => ({type:SET_SESSIONS, data: sessions})
+export const setDetailSession = (session) => ({type:SET_DETAIL_SESSION, data: session})
 
 export const getAllSessions = () => (dispatch) => {
     sessionApi.getSessions()

@@ -8,7 +8,14 @@ export const ItemSession = props => {
         margin="0 0 var(--margin-l) 0"
         color="var(--color-typo-default)"
       >
-        Название игры: {props.session.name}
+          <span
+              sessionId={props.session.id}
+            style={{cursor:"pointer"}}
+            onClick={(event => {
+                props.setStart({start: true, sessionId: event.target.getAttribute('sessionId')})
+            })}
+          >Название игры: {props.session.name}</span>
+
       </Subtitle>
       <FlexWrapper
         height="var(--height-main-flex)"
