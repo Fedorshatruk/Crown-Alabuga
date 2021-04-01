@@ -37,3 +37,9 @@ export const sessionApi = {
     getSessions() {return axios.get(`${BASE_URL}${GAME}${SESSION}`, {headers: {Authorization: read_cookie('Token')}})},
 
 }
+
+export const producerApi = {
+    getProducerData(playerId){
+        return axios.get(`${BASE_URL}${GAME}player/${playerId}/`, {headers: {Authorization: read_cookie('Token')}})
+    }
+}

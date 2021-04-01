@@ -6,6 +6,7 @@ import { GlobalStyle } from './styles/global'
 import { BrowserRouter } from 'react-router-dom';
 
 export const App = (props) => {
+
   return (
       <>
           <GlobalStyle />

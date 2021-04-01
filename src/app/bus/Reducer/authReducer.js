@@ -6,6 +6,7 @@ const SET_IS_AUTH = 'SET_IS_AUTH'
 const SET_IS_REGISTER = 'SET_IS_REGISTER'
 const SET_AUTH_ERROR = 'SET_AUTH_ERROR'
 const SET_JOIN_SESSION = 'SET_JOIN_SESSION'
+const SET_PLAYER_DATA = 'SET_PLAYER_DATA'
 
 let initialState = {
     userId: null,
@@ -13,7 +14,8 @@ let initialState = {
     isAuth: false,
     isRegister: false,
     authError: null,
-    joinSession: null
+    joinSession: null,
+    playerData: null
 };
 
 export const authReducer = (state = initialState, action) => {
@@ -43,6 +45,11 @@ export const authReducer = (state = initialState, action) => {
               ...state,
               joinSession: action.data
           }
+      case SET_PLAYER_DATA:
+          return {
+              ...state,
+              playerData: action.data
+          }
     default:
       return state;
   }
@@ -53,7 +60,7 @@ export const setIsAuth = (isAuth) => ({type: SET_IS_AUTH, data: isAuth});
 export const setIsRegister = (isRegister) => ({type: SET_IS_REGISTER, data: isRegister})
 export const setAuthError = (authError) => ({type: SET_AUTH_ERROR, data: authError})
 export const setJoinSession = (sessionId) => ({type: SET_JOIN_SESSION, data: sessionId})
-
+export const setPlayerData = (data) => ({type: SET_JOIN_SESSION, data: data})
 
 export const userRegister = (password, username) => (dispatch) => {
   authApi.registerApi(password, username)
@@ -90,6 +97,7 @@ export const joinSession = (sessionId) => (dispatch) => {
         .then(response => {
             if (response.status === 200) {
                 dispatch(setJoinSession(sessionId))
+                dispatch(setPlayerData(response.data))
             }
         })
         .catch(error => {
